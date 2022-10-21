@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OMORI WEB</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<!----Nav Bar---->
+	<header id="home" class="hero">
+		<nav>
+			<h2 class="logo">Omo<span>ri</span></h2>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#service">Service</a></li>
+				<li><a>Portofolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Fithnan <span>Ri'atan</span>
+			<h3 class="text">I'am a <span>Software Engineer</span></h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<!----About Section---->
+	<section id="about" class="about">
+		<div class="main">
+			<img src="img/aboutme.jpg">
+			<div class="about-text">
+				<h2 class="am">About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>Saya adalah seorang pelajar yang sedang menempuh pendidikan Menengah di SMK Syafi'i Akrom Pekalongan. Saya sekarang sedang mendalami dunia IT dan pengembangan Software. Saya mempelajari beberapa ilmu seperti Web Programing, Android Development, Data Engineer, UI/UX Desain, Cyber Security, dan lain sebagainya. Saya juga dapat membuat situs web lebih interaktif dengan animasi web. Desain responsif membuat situs web Anda dapat diakses oleh semua pengguna, terlepas dari perangkat mereka.</p>
+				<button type="button" onclick="chat()">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----Service Section----------->
+	<div id="service" class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Programer</h5>
+				<div class="pra">
+					<p>Pemrograman web mengacu pada penulisan, markup, dan pengkodean yang terlibat dalam pengembangan Web, yang mencakup konten Web.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://www.teknik.unpas.ac.id/blogs/pemrograman-web" target="_blank">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Android Development</h5>
+				<div class="pra">
+					<p>Android Developer atau software developer yang memiliki spesialisasi untuk merancang aplikasi untuk marketplace Android.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>UI/UX Designer</h5>
+				<div class="pra">
+					<p>UI/UX designer merupakan seseorang yang mengidentifikasi peluang baru untuk menciptakan pengalaman pengguna yang baik.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://www.ekrut.com/media/ui-ux-designer" target="_blank">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div id="contact" class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" onclick="chat()">Chat Me</a>
+	</div>
+
+	<!------Footeer--------->
+	<footer>
+		<p>Fithnan Ri'atan</p>
+		<p>Terimakasih telah mengunjungi web kami</p>
+		<div class="social">
+			<a href="https://www.facebook.com/fithnan.riatan.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a><i class="fab fa-instagram"></i></a>
+			<a href="http://www.codingasik-ca051.my.id" target="_blank"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight &copy; By Fithnan Ri'atan</p>
+	</footer>
+
+
+
+	<!--------- Java Script --------->
+
+	<!-- js scroll -->
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("nav");
+			header.classList.toggle("sticky", window.scrollY > 0)
+		})
+	</script>
+
+	<!-- js chat -->
+	<script type="text/javascript">
+		function chat () {
+    		massage = `hallo kak, Salam kenal...`
+    		const whatsapp = `https://wa.me/6285920006849?text=${massage}`
+    		open(whatsapp, "_blank")
+		}
+	</script>
+
+</body>
+</html>
